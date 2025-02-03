@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  background-color: white;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #005f99;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+  transform: 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .nav-list a {
+    font-size: 1.5rem;
+  }
+}
+
+.nav-list {
+  gap: 50px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;600&display=swap');
+
+
+h1 {
+  text-align: center;
+  color: #005f99;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 14px;
+  gap: 20px;
+  column-gap: 0px;
+  width: 60%;
+  padding: 40px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-hobby {
+  background-color: linear-gradient(135deg, #005f99 lightcyan);
+  padding: 10px;
+  text-align: left;
+  /* place-items: center; */
+  margin: auto;
+  width: 23vw;
+  height: 40vh;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 2px 3px rgba(0, 0, 0, 0.63);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-hobby h2 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  color: #005f99;
+
+}
+
+.card-hobby p {
+  font-size: 16px;
+  color: rgb(17, 16, 16);
+}
+
+.card-body {
+  overflow-y: auto;
+  height: 70%;
+}
+
+.card-hobby:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* .card-hobby:nth-child(3) {
+
+  grid-column: span 2;
+} */
+
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .card-hobby {
+    width: 50%;
+  }
+}
